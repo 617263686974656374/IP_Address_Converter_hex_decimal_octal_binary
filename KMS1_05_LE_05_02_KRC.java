@@ -32,8 +32,7 @@ public class KMS1_05_LE_05_02_KRC {
 
                 for (int i = 0; i < arrOctet.length; i++){
                     power = 3 - i;
-                    number += ((Integer.parseInt(arrOctet[i]) % 256 * Math.pow(256, power)));// https://stackoverflow.com/questions/11548273/convert-an-ip-address-to-its-decimal-equivalent-in-java
-
+                    number += ((Integer.parseInt(arrOctet[i]) % 256 * Math.pow(256, power)));
                 }
 
                 for (int i = 0; i < arrOctet.length; i++){
